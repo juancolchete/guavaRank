@@ -16,6 +16,5 @@
 - **name:** Casa do Pão de Queijo
 - **takeaway:** yes
 
-**BTCMap:** [View on BTCMap](https://btcmap.org/merchant/node:4845929869) 
 **OpenStreetMap:** [View on OSM](https://www.openstreetmap.org/node/4845929869) 
 
