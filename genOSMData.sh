@@ -1,7 +1,7 @@
 touch merchant.md
 AREA=3600059470
 API_URL=https://overpass-api.de/api/interpreter
-FILTER='"## \(.tags.name // "Unnamed Location")\n**Type:** \(.type)\n**ID:** \(.id)\n**Coordinates:** \(.lat), \(.lon)\n" + ([.tags["addr:street"], .tags["addr:housenumber"], .tags["addr:suburb"], .tags["addr:city"], .tags["addr:postcode"]] | map(select(. != null and . != "")) | join(", ") | if . != "" then "**Address:** " + . + "\n" else "" end) + "**Details:**\n" + (.tags | to_entries | map("- **\(.key):** \(.value)") | join("\n"))  + "\n\n**OpenStreetMap:** [View on OSM](https://www.openstreetmap.org/node/\(.id)) \n"'
+FILTER='## \(.tags.name // "Unnamed Location")\n**Type:** \(.type)\n**ID:** \(.id)\n**Coordinates:** \(.lat), \(.lon)\n" + ([.tags["addr:street"], .tags["addr:housenumber"], .tags["addr:suburb"], .tags["addr:city"], .tags["addr:postcode"]] | map(select(. != null and . != "")) | join(", ") | if . != "" then "**Address:** " + . + "\n" else "" end) + "**Details:**\n" + (.tags | to_entries | map("- **\(.key):** \(.value)") | join("\n"))  + "\n\n**OpenStreetMap:** [View on OSM](https://www.openstreetmap.org/node/\(.id)) \n'
 curl --location \
 $API_URL \
 --header 'Content-Type:text/plain' \
