@@ -6,5 +6,5 @@ curl --location \
 $API_URL \
 --header 'Content-Type:text/plain' \
 --data '[out:json][timeout:180];area('$AREA')->.brazil;(node['$1'](area.brazil););out body;>;out skel qt;' > merchant.json  
-jq -r  "$FILTER" merchant.json > merchant.md
+jq -r  ''"$FILTER"'' merchant.json > merchant.md
 
