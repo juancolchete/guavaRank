@@ -2,31 +2,13 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-03-21T22:36:15Z",
-    "timestamp_areas_base": "2026-03-21T14:40:14Z",
+    "timestamp_osm_base": "2026-03-26T19:12:45Z",
+    "timestamp_areas_base": "2026-03-26T10:16:05Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
 
-{
-  "type": "node",
-  "id": 4845929869,
-  "lat": -23.5424985,
-  "lon": -46.6442935,
-  "tags": {
-    "addr:city": "São Paulo",
-    "addr:housenumber": "904",
-    "addr:postcode": "01209-002",
-    "addr:street": "Rua Aurora",
-    "amenity": "cafe",
-    "brand": "Casa do Pão de Queijo",
-    "brand:wikidata": "Q9698946",
-    "cuisine": "coffee_shop",
-    "guava": "yes",
-    "name": "Casa do Pão de Queijo",
-    "takeaway": "yes"
-  }
-}
+
 
   ]
 }
